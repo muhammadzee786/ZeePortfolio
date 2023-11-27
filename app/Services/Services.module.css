@@ -1,19 +1,19 @@
 .container {
      background-color:white;
      width: 80%;
-     display: flex;
+     /* display: flex; */
      margin: 0 auto;
      margin-top: 60px;
      margin-bottom: 30px;
 }
 
 .serviceHead {
-     text-align: center;
+     /* text-align: center; */
      width: 100%;
 }
 
 .serviceTitle {
-     font-size: 3rem;
+     font-size: 1rem;
      font-weight: bold;
      text-transform: uppercase;
 }
@@ -58,3 +58,39 @@
      text-align: center;
      box-shadow: 0 0 0 10px #0078ff;
 }
+
+.innerContainer {
+     /* width: 100%; */
+     display: flex;
+     /* justify-content: center; */
+}
+
+.listInner {
+     width: 40%;
+     box-shadow: 0 0 30px rgba(0,0,0,.12);
+     padding: 60px 40px 50px;
+     margin-bottom: 50px;
+     margin-top: 20px;
+     cursor: pointer;
+     margin-right: 10px;
+}
+
+.listInner:hover{
+     width: 40%;
+     box-shadow: 0 0 30px rgba(0,0,0,.12);
+     padding: 60px 40px 50px;
+     margin-bottom: 50px;
+     margin-top: 20px;
+     cursor: pointer;
+     margin-right: 10px;
+     background-color: #0078ff;
+     transition: all 1s ease;
+     color: #fff;
+}
+
+.title {
+     font-size: 20px;
+     font-weight: bold;
+     margin-top: 10px;
+}
+
