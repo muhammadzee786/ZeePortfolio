@@ -14,6 +14,7 @@ function Navbar() {
          <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72" style={{backgroundColor: "green"}}>
            <img src="/logo.png" className="w-100 h-10 mr-2" alt="Logo" />
          </div>
+
          <div className="block lg:hidden">
            <button
              onClick={() => setIsOpen(!isOpen)}
@@ -35,6 +36,7 @@ function Navbar() {
              </svg>
            </button>
          </div>
+         
          <div
            className={`w-full block lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"} ${styles.underLine}`}>
            <div className={`text-sm lg:flex-grow text-base font-medium`}>

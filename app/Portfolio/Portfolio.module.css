@@ -1,0 +1,40 @@
+.container {
+     background-color:white;
+     width: 80%;
+     margin: 0 auto;
+     margin-top: 60px;
+     margin-bottom: 30px;
+}
+
+.portfolioHead {
+     width: 100%;
+     position: relative;
+}
+
+.portfolioTitle {
+     font-size: 20px;
+     font-weight: bold;
+     text-transform: uppercase;
+}
+
+.lineMf {
+     width: 75px;
+     height: 3px;
+     background-color: #0078ff;
+     margin-top: 2px;
+}
+
+.card {
+     height: 200px;
+     width: 20%;
+     margin-top: 20px;
+}
+
+.cardTitle {
+     font-size: 1.2rem;
+     font-weight: 700;
+}
+
+.stackName {
+     color: #0078ff;
+}
