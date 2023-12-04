@@ -3,28 +3,30 @@ import React, { useState } from 'react'
 import styles from './Services.module.css'
 import ReactIcon from '../assests/svg/reactIcon'
 import CustomModal from '../components/CustomModal'
+import UiUxIcon from '../assests/svg/UiUxIcon'
+import ReactNativeIcon from '../assests/svg/reactNativeIcon'
 
 const services = [
      {
           "icon": <ReactIcon />,
           "title": "Web Design",
-          "description": "Most common methods for designing websites that work well on desktop.."
+          "description": "Tailored and responsive websites crafted to enhance your online presence and encourage meaningful interactions"
      },
      {
-          "icon": <ReactIcon />,
+          "icon": <ReactNativeIcon />,
           "title": "Mobile App",
-          "description": "Most common methods for designing websites that work well on desktop.."
+          "description": "Bring your concepts to life by creating immersive and user-friendly mobile experiences, elevating your digital presence and fostering increased user engagement."
      },
      {
-          "icon": <ReactIcon />,
+          "icon": <UiUxIcon />,
           "title": "UI/UX",
-          "description": "Most common methods for designing websites that work well on desktop.."
+          "description": "Captivating visuals and artistic proficiency to effectively communicate your brand's message, creating a lasting and impactful impression."
      },
-     {
-          "icon": <ReactIcon />,
-          "title": "SEO Marketing",
-          "description": "Most common methods for designing websites that work well on desktop.."
-     },
+     // {
+     //      "icon": <ReactIcon />,
+     //      "title": "SEO Marketing",
+     //      "description": "Most common methods for designing websites that work well on desktop.."
+     // },
 ]
 
 function Services() {
@@ -44,13 +46,13 @@ function Services() {
           <div className={`${styles.container}`}>
                <div className={`${styles.serviceHead}`}>
                     <p className={`${styles.serviceTitle}`}>Services</p>
-                    <div className={`${styles.lineMf}`}/>
+                    <div className={`${styles.lineMf}`} />
                </div>
 
                <div className={`${styles.innerContainer}`}>
                     {services.map((data: any, index: number) => {
                          return (
-                              <div className={`${styles.listInner}`} onClick={openModal}>
+                              <div key={index} className={`${styles.listInner}`} onClick={openModal}>
                                    <span className={`${styles.icon}`}>
                                         {data.icon}
                                    </span>
@@ -70,32 +72,22 @@ function Services() {
 
                     <div className='my-4'>
                          <h2 className='text-[22px] font-bold'>Seo Marketing</h2>
-                         <p>Arlo is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, 
+                         <p>Arlo is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates,
                               and maximize your revenue to help grow your business and achieve your goals.</p>
-                              <p>
-                              In today’s digital world, your website is the first interaction consumers have with
-                               your business. That's why almost 95 percent of a user’s first impression relates to
-                                web design. It’s also why web design services can have an immense impact on your
-                                 company’s bottom line.
-                              </p>
-                              <p>
-                              In today’s digital world, your website is the first interaction consumers have with
-                               your business. That's why almost 95 percent of a user’s first impression relates to
-                                web design. It’s also why web design services can have an immense impact on your
-                                 company’s bottom line.
-                              </p>
+                         <p>
+                              In today's digital world, your website is the first interaction consumers have with
+                              your business. That's why almost 95 percent of a user's first impression relates to
+                              web design. Its also why web design services can have an immense impact on your
+                              companys bottom line.
+                         </p>
+                         <p>
+                              In todays digital world, your website is the first interaction consumers have with
+                              your business. That's why almost 95 percent of a user's first impression relates to
+                              web design. Its also why web design services can have an immense impact on your
+                              companys bottom line.
+                         </p>
                     </div>
                </CustomModal>
-
-               {/* <Modal open={open} onClose={onCloseModal} center>
-               <div className='w-[92%]'>
-               <img 
-               src={'https://bootstrapmade.com/demo/templates/DevFolio/assets/img/testimonial-2.jpg'} 
-               alt='Profile'
-               className='w-full h-96'
-               />
-               </div>
-      </Modal> */}
 
           </div>
      )

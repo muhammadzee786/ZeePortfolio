@@ -6,36 +6,20 @@
      margin-bottom: 30px;
 }
 
-.portfolioHead {
+.head {
      width: 100%;
      position: relative;
 }
 
-.portfolioTitle {
+.title {
      font-size: 20px;
      font-weight: bold;
      text-transform: uppercase;
 }
 
 .lineMf {
-     width: 75px;
+     width: 100px;
      height: 3px;
      background-color: #0078ff;
      margin-top: 2px;
-}
-
-.card {
-     width: 24%;
-     margin-top: 10px;
-}
-
-.cardTitle {
-     font-size: 1.2rem;
-     font-weight: 700;
-}
-
-.fullProjLink {
-     color: #2046f2;
-     border-bottom:2px solid #2046f2;
-     padding-bottom: 5px;
 }

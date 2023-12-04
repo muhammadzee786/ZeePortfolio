@@ -2,19 +2,20 @@ import React from 'react'
 import styles from './About.module.css'
 
 const user = {
-  "Name": "Morgan Freeman",
+  "Name": "Hafiz Muhammad Zeeshan",
   "Profile": "full stack developer",
-  "Email": "contact@example.com",
-  "Phone": "(617) 557-0089",
+  "Email": "hafiz.zee343@example.com",
+  "Phone": "(92) 305 5083272",
 }
 
 const skills = {
-  "HTML": "85%",
-  "CSS": "85%",
-  "Tailwind": "50%",
+  "React": "95%",
+  "React Native": "95%",
+  "CSS": "90%",
+  "NextJs": "90%",
   "Redux": "85%",
-  "React": "85%",
-  "React Native": "85%"
+  "Tailwind": "80%",
+  "Node": "70%",
 }
 
 function About() {
@@ -22,23 +23,23 @@ function About() {
     <div className={`${styles.container}`}>
       <div className={`${styles.leftContainer}`}>
         <div className={`${styles.displayFlex}`}>
-          <img src={'https://bootstrapmade.com/demo/templates/DevFolio/assets/img/testimonial-2.jpg'} alt='Profile'/>
+          <img src={'https://bootstrapmade.com/demo/templates/DevFolio/assets/img/testimonial-2.jpg'} alt='Profile' />
           <div>
-            {Object.keys(user).map((key, value) => (
-              <div className={`${styles.userInfo}`}>
-              <span className={`${styles.userInfoKey}`}>{key}: </span>
-              <span>{user[key as keyof typeof user]}</span>
+            {Object.keys(user).map((key, index) => (
+              <div key={index} className={`${styles.userInfo}`}>
+                <span className={`${styles.userInfoKey}`}>{key}: </span>
+                <span>{user[key as keyof typeof user]}</span>
               </div>
             ))}
           </div>
         </div>
         <div>
           <p className={`${styles.title1}`}>Skill</p>
-          {Object.keys(skills).map((key) => {
-            return(
-              <div>
+          {Object.keys(skills).map((key, index) => {
+            return (
+              <div key={index}>
                 <div className={`${styles.displayFlex}`}>
-                  <p className="mr-3">{key }</p>
+                  <p className="mr-3">{key}</p>
                   <p>{skills[key as keyof typeof skills]}</p>
                 </div>
                 <progress value={parseInt(skills[key as keyof typeof skills])} max="100" className='w-full progress-blue-700'></progress>
@@ -50,19 +51,21 @@ function About() {
       <div className={`${styles.leftContainer}`}>
         <h1 className={`${styles.aboutTitle}`}>About me</h1>
         <p>
-        Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat,
-         accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a 
-         pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt.
+          As a dedicated Frontend developer and aspiring Master, I bring a fusion of design
+          finesse and technical expertise to the table. Proficient in React, React Native,
+          TailwindCSS, HTML5, CSS, Typescript, Next, and Figma to design, google maps,
+          firebase, NodeJs, MongoDb ⭐⭐⭐⭐⭐,
         </p>
         <p>
-        Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat,
-         accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a 
-         pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt.
+          I am committed to transforming client ideas into reality. Offering comprehensive
+          services in both frontend and backend development, I am well-versed in React Native,
+          React JS, HTML & CSS, JavaScript, and Node JS. Moreover, my creativity extends to
+          crafting full-stack web apps and websites using React.js, Next.js, MongoDB, Node.js,
+          and Express.js. Whether it's small businesses or ambitious projects, I am passionate
+          about bringing visions to life with precision and flair.
         </p>
         <p>
-        Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat,
-         accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a 
-         pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt.
+          Let's collaborate to make your digital presence exceptional. 💻🚀🎨
         </p>
       </div>
     </div>

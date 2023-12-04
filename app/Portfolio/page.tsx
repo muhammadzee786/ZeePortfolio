@@ -3,34 +3,39 @@ import styles from './Portfolio.module.css'
 
 const portfolioData = [
      {
-          image: 'https://bootstrapmade.com/demo/templates/DevFolio/assets/img/work-1.jpg',
+          image: `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAA…3ds1toOsp2rsldisCqUbgXyZa3946L/uFAAAAAElFTkSuQmCC`,
           title: 'Lorem impsum dolor',
           subTitle: 'Web Design',
-          date: '18 Sep. 2018'
+          date: '18 Sep. 2018',
+          link: 'https://nationwide-surveyors.org.uk/'
      },
      {
           image: 'https://bootstrapmade.com/demo/templates/DevFolio/assets/img/work-1.jpg',
           title: 'Lorem impsum dolor',
           subTitle: 'Web Design',
-          date: '18 Sep. 2018'
+          date: '18 Sep. 2018',
+          link: 'https://www.coachlist.com/'
      },
      {
           image: 'https://bootstrapmade.com/demo/templates/DevFolio/assets/img/work-1.jpg',
           title: 'Lorem impsum dolor',
           subTitle: 'Web Design',
-          date: '18 Sep. 2018'
+          date: '18 Sep. 2018',
+          link: 'https://nationwide-surveyors.org.uk/'
      },
      {
           image: 'https://bootstrapmade.com/demo/templates/DevFolio/assets/img/work-1.jpg',
           title: 'Lorem impsum dolor',
           subTitle: 'Web Design',
-          date: '18 Sep. 2018'
+          date: '18 Sep. 2018',
+          link: 'https://nationwide-surveyors.org.uk/'
      },
      {
           image: 'https://bootstrapmade.com/demo/templates/DevFolio/assets/img/work-1.jpg',
           title: 'Lorem impsum dolor',
           subTitle: 'Web Design',
-          date: '18 Sep. 2018'
+          date: '18 Sep. 2018',
+          link: 'https://nationwide-surveyors.org.uk/'
      },
 ]
 
@@ -43,23 +48,26 @@ function Portfolio() {
                </div>
 
                <div className='flex gap-4 flex-wrap'>
-               {portfolioData.map((data,index) => {
-                    return(
-                         <div className={`${styles.card}`}>
-                    <img
-                         src='https://bootstrapmade.com/demo/templates/DevFolio/assets/img/work-1.jpg'
-                         alt='title image'
-                    />
-                    <div className='mt-2'>
-                         <h2 className={`${styles.cardTitle}`}>Leorm title</h2>
-                         <div>
-                              <span className={`${styles.stackName}`}>web Design</span>
-                              <span> / 18 sep, 2018</span>
-                         </div>
-                    </div>
-               </div>
-                    )
-               })}
+                    {portfolioData.map((data, index) => {
+                         return (
+                              <div key={index} className={`${styles.card}`}>
+                                   <img
+                                        src={data.image}
+                                        alt='title image'
+                                   />
+                                   <div className='mt-2'>
+                                        <h2 className={`${styles.cardTitle}`}>{data.title}</h2>
+                                        <div>
+                                             <span>{data.subTitle}</span>
+                                             <span> / {data.date}</span>
+                                        </div>
+                                        <a target="_blank" href={data.link} className={`${styles.fullProjLink}`}>
+                                        <button>See full project</button>
+                                        </a>
+                                   </div>
+                              </div>
+                         )
+                    })}
                </div>
           </div>
      )
