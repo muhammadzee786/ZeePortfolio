@@ -3,7 +3,7 @@ import styles from './Portfolio.module.css'
 
 const portfolioData = [
      {
-          image: `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAA…3ds1toOsp2rsldisCqUbgXyZa3946L/uFAAAAAElFTkSuQmCC`,
+          image: '/images/stampbox.jpg',
           title: 'Lorem impsum dolor',
           subTitle: 'Web Design',
           date: '18 Sep. 2018',
