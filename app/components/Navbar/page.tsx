@@ -9,6 +9,19 @@ import Link from 'next/link';
 function Navbar() {
      const [isOpen, setIsOpen] = useState(false);
 
+     const handleScrollTo = (id: string) => {
+         const element = document.getElementById(id)
+         const headerHeight = 20
+         if(element){
+             const rect = element.getBoundingClientRect()
+             const offset = rect.top - headerHeight
+             window.scrollBy({
+                 top: offset,
+                 behavior: "smooth"
+             })
+         }
+     }
+
      return (
        <nav className={`flex items-center justify-between flex-wrap p-3 ${styles.header} ${styles.topFixed}`}>
          <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72" style={{backgroundColor: "green"}}>
@@ -36,22 +49,22 @@ function Navbar() {
              </svg>
            </button>
          </div>
-         
+
          <div
-           className={`w-full block lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"} ${styles.underLine}`}>
+           className={`w-full block lg:flex lg:items-center lg:w-auto cursor-pointer ${isOpen ? "block" : "hidden"} ${styles.underLine}`}>
            <div className={`text-sm lg:flex-grow text-base font-medium`}>
-             <Link href="/Home" className={`block mt-4 lg:inline-block lg:mt-0 mr-4 ${styles.navItem} ${styles.isActive}`} active-color="green">
+             <div className={`block mt-4 lg:inline-block lg:mt-0 mr-4 ${styles.navItem}`} onClick={() => handleScrollTo("HomeSection")}>
                Home
-             </Link>
-             <Link href="/About" className={`block mt-4 lg:inline-block lg:mt-0 mr-4 ${styles.navItem}`} active-color="green">
+             </div>
+             <div className={`block mt-4 lg:inline-block lg:mt-0 mr-4 ${styles.navItem}`} onClick={() => handleScrollTo("AboutSection")}>
                About
-             </Link>
-             <Link href="/Services" className={`block mt-4 lg:inline-block lg:mt-0 mr-4 ${styles.navItem}`}>
+             </div>
+             <div className={`block mt-4 lg:inline-block lg:mt-0 mr-4 ${styles.navItem}`} onClick={() => handleScrollTo("ServicesSection")}>
                Services
-             </Link>
-             <Link href="#" className={`block mt-4 lg:inline-block lg:mt-0 mr-4 ${styles.navItem}`}>
+             </div>
+             <div className={`block mt-4 lg:inline-block lg:mt-0 mr-4 ${styles.navItem}`} onClick={() => handleScrollTo("PortfolioSection")}>
                Work
-             </Link>
+             </div>
              <span className={`${styles.navIndicator}`}></span>
            </div>
          </div>

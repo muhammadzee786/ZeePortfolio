@@ -3,45 +3,52 @@ import styles from './Portfolio.module.css'
 
 const portfolioData = [
      {
-          image: '/images/stampbox.jpg',
-          title: 'Lorem impsum dolor',
+          image: '/images/coachlist.jpg',
+          title: 'CoachList',
           subTitle: 'Web Design',
-          date: '18 Sep. 2018',
-          link: 'https://nationwide-surveyors.org.uk/'
-     },
-     {
-          image: 'https://bootstrapmade.com/demo/templates/DevFolio/assets/img/work-1.jpg',
-          title: 'Lorem impsum dolor',
-          subTitle: 'Web Design',
-          date: '18 Sep. 2018',
+          date: '01 December. 2022',
           link: 'https://www.coachlist.com/'
      },
      {
-          image: 'https://bootstrapmade.com/demo/templates/DevFolio/assets/img/work-1.jpg',
-          title: 'Lorem impsum dolor',
+          image: '/images/nationawide.jpg',
+          title: 'Nationwide Surveyors: Landlord Certificates',
           subTitle: 'Web Design',
-          date: '18 Sep. 2018',
+          date: '15 July. 2022',
           link: 'https://nationwide-surveyors.org.uk/'
      },
      {
-          image: 'https://bootstrapmade.com/demo/templates/DevFolio/assets/img/work-1.jpg',
-          title: 'Lorem impsum dolor',
-          subTitle: 'Web Design',
-          date: '18 Sep. 2018',
-          link: 'https://nationwide-surveyors.org.uk/'
+          image: '/images/stampbox.jpg',
+          title: 'StampBox-Philatelists platform',
+          subTitle: 'Mobile App',
+          date: '01 March 2023',
+          link: 'https://play.google.com/store/apps/details?id=com.stampbox&hl=en&gl=US&pli=1'
      },
      {
-          image: 'https://bootstrapmade.com/demo/templates/DevFolio/assets/img/work-1.jpg',
-          title: 'Lorem impsum dolor',
-          subTitle: 'Web Design',
-          date: '18 Sep. 2018',
-          link: 'https://nationwide-surveyors.org.uk/'
+          image: '/images/chex.jpg',
+          title: 'CHEX.AI',
+          subTitle: 'Web App',
+          date: '10 Sep. 2021',
+          link: 'https://www.chex.ai/ReqADemo/'
+     },
+     {
+          image: '/images/perkwiz.jpg',
+          title: 'PerkWiz: Local & Web Talent',
+          subTitle: 'Mobile App',
+          date: '15 Mar. 2020',
+          link: 'https://play.google.com/store/apps/details?id=com.perkwizmobile.prod&hl=en&gl=US'
+     },
+     {
+          image: '/images/bringfresh.jpg',
+          title: 'Bring Fresh',
+          subTitle: 'Web & Mobile App',
+          date: '20 Sep. 2019',
+          link: 'https://bringfresh.eu/'
      },
 ]
 
 function Portfolio() {
      return (
-          <div className={`${styles.container}`}>
+          <div id="PortfolioSection" className={`${styles.container}`}>
                <div className={`${styles.portfolioHead}`}>
                     <p className={`${styles.portfolioTitle}`}>Portfolio</p>
                     <div className={`${styles.lineMf}`} />

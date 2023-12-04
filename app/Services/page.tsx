@@ -43,7 +43,7 @@ function Services() {
      };
 
      return (
-          <div className={`${styles.container}`}>
+          <div id="ServicesSection" className={`${styles.container}`}>
                <div className={`${styles.serviceHead}`}>
                     <p className={`${styles.serviceTitle}`}>Services</p>
                     <div className={`${styles.lineMf}`} />

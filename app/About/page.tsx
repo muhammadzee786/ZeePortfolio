@@ -20,7 +20,7 @@ const skills = {
 
 function About() {
   return (
-    <div className={`${styles.container}`}>
+    <div id="AboutSection" className={`${styles.container}`}>
       <div className={`${styles.leftContainer}`}>
         <div className={`${styles.displayFlex}`}>
           <img src={'https://bootstrapmade.com/demo/templates/DevFolio/assets/img/testimonial-2.jpg'} alt='Profile' />
@@ -59,7 +59,7 @@ function About() {
         <p>
           I am committed to transforming client ideas into reality. Offering comprehensive
           services in both frontend and backend development, I am well-versed in React Native,
-          React JS, HTML & CSS, JavaScript, and Node JS. Moreover, my creativity extends to
+          React JS, HTML &apos; CSS, JavaScript, and Node JS. Moreover, my creativity extends to
           crafting full-stack web apps and websites using React.js, Next.js, MongoDB, Node.js,
           and Express.js. Whether it's small businesses or ambitious projects, I am passionate
           about bringing visions to life with precision and flair.
