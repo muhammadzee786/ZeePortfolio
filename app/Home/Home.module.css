@@ -1,7 +1,7 @@
 .container {
      padding-top: 60px;
      height: 600px;
-     background-image: url('https://bootstrapmade.com/demo/templates/DevFolio/assets/img/hero-bg.jpg');
+     background-image: url('/images/hero-bg.png');
      background-size: cover;
      background-position: center;
      background-attachment: fixed;

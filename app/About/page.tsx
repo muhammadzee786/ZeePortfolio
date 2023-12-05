@@ -23,7 +23,7 @@ function About() {
     <div id="AboutSection" className={`${styles.container}`}>
       <div className={`${styles.leftContainer}`}>
         <div className={`${styles.displayFlex}`}>
-          <img src={'https://bootstrapmade.com/demo/templates/DevFolio/assets/img/testimonial-2.jpg'} alt='Profile' />
+          <img src={'/images/profile-image.jpg'} alt='Profile' className='h-40' />
           <div>
             {Object.keys(user).map((key, index) => (
               <div key={index} className={`${styles.userInfo}`}>

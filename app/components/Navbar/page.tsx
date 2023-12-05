@@ -24,7 +24,7 @@ function Navbar() {
 
      return (
        <nav className={`flex items-center justify-between flex-wrap p-3 ${styles.header} ${styles.topFixed}`}>
-         <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72" style={{backgroundColor: "green"}}>
+         <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72" >
            <img src="/logo.png" className="w-100 h-10 mr-2" alt="Logo" />
          </div>
 
