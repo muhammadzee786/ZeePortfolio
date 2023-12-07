@@ -4,7 +4,7 @@ import styles from './About.module.css'
 const user = {
   "Name": "Hafiz Muhammad Zeeshan",
   "Profile": "full stack developer",
-  "Email": "hafiz.zee343@example.com",
+  "Email": "hafiz.zee343@gmail.com",
   "Phone": "(92) 305 5083272",
 }
 
